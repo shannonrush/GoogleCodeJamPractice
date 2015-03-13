@@ -4,7 +4,6 @@ T9Spelling <- function(input, output.name) {
     for (l in 1:length(lines)) {
         chars <- unlist(strsplit(lines[l],""))
         con <- unlist(lapply(chars, ConvertChar))
-        # add spaces between like chars
         t9spelling <- lapply(1:length(con), 
                              function(i) ifelse(grepl(substr(con[i],1,1), con[i+1]), paste0(con[i]," "), con[i]))
         out.spelling <- paste(unlist(t9spelling),collapse="")
