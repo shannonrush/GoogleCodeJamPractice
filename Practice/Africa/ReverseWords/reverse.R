@@ -3,8 +3,7 @@ Reverse <- function(input, output.name) {
     output <- c()
     for (l in 1:length(lines)) {
         words <- unlist(strsplit(lines[l], " "))
-        reversed <- unlist(lapply(length(words):1, function(w) words[w]))
-        output <- c(output, (paste0("Case #", l, ": ", paste(reversed, collapse=" "))))
+        output <- c(output, (paste0("Case #", l, ": ", paste(rev(unlist(strsplit(lines[l], " "))), collapse=" "))))
     }
     writeLines(output, output.name)
 }
