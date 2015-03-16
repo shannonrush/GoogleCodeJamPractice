@@ -4,3 +4,7 @@ Reverse <- function(input, output.name) {
     writeLines(output, output.name)
 }
 
+# O(m*n)
+# m <- num lines in input
+# n <- num words in line
+
