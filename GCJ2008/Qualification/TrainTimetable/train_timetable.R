@@ -55,5 +55,7 @@ TripsDF <- function(trips) {
     }
 }
 
+#O(n^2 log(n))
+
 # small: 265ms
 # large: 4978ms

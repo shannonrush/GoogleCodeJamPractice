@@ -27,5 +27,6 @@ SaveUniverse <- function(input, output.name) {
     writeLines(output, output.name)
 }
 
+# O(n)
 # small: 21ms
 # large: 200ms
