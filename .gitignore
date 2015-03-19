@@ -1,3 +1,4 @@
 *.RData
 *.RHistory
+*.DS_Store
 GCJ2008/Round1A/Numbers/*
